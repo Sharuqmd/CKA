@@ -25,3 +25,52 @@ kubectl config set-context <context-name> --cluster=<cluster-name> --user=<user-
 kubectl config delete-context <context-name>
 kubectl config view
 kubectl config rename-context <old-context-name> <new-context-name>
+
+Commonly Used Kubernetes Commands
+
+    Create Resources
+        kubectl create namespace <namespace>
+        kubectl create deployment <name> --image=<image>
+        kubectl create service <type> <name> --tcp=<port>:<targetPort>
+
+    Apply Configurations
+        kubectl apply -f <file.yaml>
+
+    Get Resources
+        kubectl get pods
+        kubectl get services
+        kubectl get deployments
+        kubectl get all
+
+    Describe Resources
+        kubectl describe pod <pod-name>
+        kubectl describe service <service-name>
+
+    Delete Resources
+        kubectl delete pod <pod-name>
+        kubectl delete service <service-name>
+        kubectl delete deployment <deployment-name>
+
+    View Logs
+        kubectl logs <pod-name>
+        kubectl logs <pod-name> -c <container-name>
+
+    Execute Commands in Containers
+        kubectl exec -it <pod-name> -- <command>
+
+    Scale Resources
+        kubectl scale deployment <deployment-name> --replicas=<number>
+
+    Port Forwarding
+        kubectl port-forward <pod-name> <local-port>:<pod-port>
+
+    Update Resource Images
+        kubectl set image deployment/<deployment-name> <container-name>=<new-image>
+
+    Copy Files
+        kubectl cp <pod-name>:/path/to/file /local/path
+        kubectl cp /local/path <pod-name>:/path/to/file
+
+    Monitor Resource Usage
+        kubectl top pods
+        kubectl top nodes

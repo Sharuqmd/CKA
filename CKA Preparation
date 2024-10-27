@@ -1,0 +1,13 @@
+1. Kubernetes Cluster and Node Setup
+2. Role-Based Access Control (RBAC)
+3. Authentication and Authorization
+4. Network Policies
+5. Pod Security Standards (PSS) and Pod Security Policies (PSP)
+6. Managing Secrets and ConfigMaps
+7. Node Security and Hardening
+8. Resource Quotas and Limits
+9. Audit Logs and Monitoring
+10. Security Tools and Image Scanning
+11. Backup and Disaster Recovery
+12. TLS and Certificate Management
+13. Network Security and External Access

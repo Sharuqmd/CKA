@@ -1,3 +1,5 @@
+Core topics
+
 1. Kubernetes Cluster and Node Setup
 2. Role-Based Access Control (RBAC)
 3. Authentication and Authorization
@@ -11,3 +13,15 @@
 11. Backup and Disaster Recovery
 12. TLS and Certificate Management
 13. Network Security and External Access
+
+
+Mostly used impernative commands:
+
+kubectl config current-context
+kubectl config get-contexts
+kubectl config use-context <context-name>
+kubectl config set-context --current --namespace=<namespace>
+kubectl config set-context <context-name> --cluster=<cluster-name> --user=<user-name> --namespace=<namespace>
+kubectl config delete-context <context-name>
+kubectl config view
+kubectl config rename-context <old-context-name> <new-context-name>

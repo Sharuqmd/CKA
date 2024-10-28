@@ -74,3 +74,19 @@ Commonly Used Kubernetes Commands
     Monitor Resource Usage
         kubectl top pods
         kubectl top nodes
+
+
+
+SSL TLS certificate 
+Example:- In this case we have 2 servers one is client server and another one is browser server. 
+## From the browser server when the https request given to the client server, 
+we need to send encrypted data from browser end so we encrypt this with public and private key now the data is encrypted 
+Now when the https request is sent to client server it will give public key then broweser receives it and encrypt the already encrypted data 
+then the data transmitted to client server now both the server have private key so any messages can be encrypted and decrypted in both the side 
+
+## Now we need to know that server is ligit so adding client certificate to the public key passing stage that Certificate is signed by CA like symentac companies 
+no we have public key and ca certificate form server send it to browser and browser will verify it and allow request 
+how do browser knows that its ligit CA for that ca signers like symentac will create one pair of pub and priv key thos pub key will be installed in browser default
+
+## 
+

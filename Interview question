@@ -1,1 +1,2 @@
-How to 
+How to check database server connection in aws ?
+ans:- Use telnet and its ip for connection 
